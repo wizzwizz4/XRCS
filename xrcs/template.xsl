@@ -3,7 +3,7 @@
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
                 xmlns:xrcs="xrcs:xrcs"
                 xmlns="http://www.w3.org/1999/xhtml">
-    <xsl:import href="config.xsl" />
+    <!--<xsl:import href="config.xsl" />-->
     <xsl:template match="/">
         <!-- DOCTYPE from
              https://stackoverflow.com/a/22302701/522375 -->
