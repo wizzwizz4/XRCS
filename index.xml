@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/XRCS/xrcs/template.xsl" type="text/xsl"?>
+<xrcs:page id="/"
+           xmlns="http://www.w3.org/1999/xhtml"
+           xmlns:xrcs="xrcs:xrcs">
+    <xrcs:title>XRCS Home Page</xrcs:title>
+    <xrcs:content>
+        <p>
+            Congratulations! If you are reading this, you've
+            successfully managed to get XRCS to serve a page.
+            Here are some things you need to do to make sure
+            it's set up properly:
+        </p>
+        <ol>
+            <li>
+                <h3>Is this page showing up as XML?</h3>
+                <p>
+                    If so, there will be a comment after this
+                    sentence, and lots of <code>&lt;tags&gt;</code>
+                    scattered around this page.
+                    <!-- You should be able to read this comment
+                         if it is XML, which is bad! -->
+                    If this is the very next sentence, there isn't,
+                    and the page is probably not displaying as XML.
+                    That's good!
+                </p>
+                <p>
+                    If the page <i>is</i> displaying as XML, try
+                    changing the MIME-type settings on your server.
+                    If this page is being served as text/xml, it's
+                    possible that the next issue could be the problem
+                    so try that.
+                </p>
+            </li>
+            <li>
+                <h3>Does this page look bleak and boring?</h3>
+                <p>
+                    There's a feature of most web browsers called
+                    XSLT. It lets you take a simple, boring document
+                    and make it look like a pretty web page without
+                    having to have a processing stage; the server
+                    can just return an XML document representing the
+                    data and have the client turn it into a full HTML
+                    webpage.
+                </p>
+                <p>
+                    This webpage will almost certainly look bleak and
+                    boring the first time you deploy it, because it's
+                    unlikely you'll put XRCS into a folder called
+                    XRCS and so the web browser won't be able to find
+                    the file telling it how to convert the boring XML
+                    document into an interesting web page. This file
+                    will probably be called
+                    <code>template.xsl</code>.
+                </p>
+                <p>
+                    Once you've found <code>template.xsl</code> and
+                    have got its URL (not path on web server), open
+                    this file in your favourite text editor and
+                    change the second line from <pre><code><![CDATA[
+<?xml-stylesheet href="/XRCS/xrcs/template.xsl" type="text/xsl"?>]]>
+                    </code></pre> to <pre><code><![CDATA[
+<?xml-stylesheet href="url of template.xsl" type="text/xsl"?>]]>
+                    </code></pre>. Now refresh this page, and...
+                    success? XSLT's pretty tricky to set up, but
+                    I'm sure you can do it!
+                </p>
+            </li>
+        </ol>
+        
+        <h2>It works!</h2>
+        <p>
+            Good to know. I'm happy for you. Please excuse the poor
+            web design; I'm not too great at that. If you want to
+            know more about how to set this thing up, you can use the
+            bar that's on the left-hand side by default to navigate
+            the site.
+        </p>
+        <p>
+            Oh, yeah; <i>those</i> pages won't display properly if
+            you had to do any setting up to get this page to work,
+            because they'll still be using the old
+            <code>&lt;?xml-stylesheet&gt;</code> directive. If you
+            want to keep those pages around you can perform a find +
+            replace on them (it won't break anything, honest!) to
+            make them look in the right place. I recommend getting
+            rid of them, though, unless you want to keep them around
+            as examples.
+        </p>
+    </xrcs:content>
+</xrcs:page>
