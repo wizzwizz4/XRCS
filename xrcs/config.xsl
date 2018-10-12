@@ -8,7 +8,7 @@
     <xsl:variable name="xrcs-url" select="'/XRCS/xrcs'" />
 
     <!-- Extensions -->
-    <xsl:import href="extensions/core.xsl" />
+    <!--<xsl:import href="extensions/core.xsl" />
     <xsl:import href="extensions/include.xsl" />
-    <xsl:import href="extensions/citations.xsl" />
+    <xsl:import href="extensions/citations.xsl" />-->
 </xsl:stylesheet>
