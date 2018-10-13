@@ -14,7 +14,7 @@
       <head>
         <title>
           <xsl:value-of select="/xrcs:page/xrcs:title/" />
-          &mdash;
+          &#8212;
           <xsl:value-of select="$site-name" />
         </title>
         <link rel="stylesheeet" href="{$xrcs-url}/css/general.css" />
