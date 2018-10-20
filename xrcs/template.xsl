@@ -13,7 +13,7 @@
     <html>
       <head>
         <title>
-          <xsl:value-of select="/xrcs:page/xrcs:title/" />
+          <xsl:value-of select="/xrcs:page/xrcs:title" />
           &#8212;
           <xsl:value-of select="$site-name" />
         </title>
