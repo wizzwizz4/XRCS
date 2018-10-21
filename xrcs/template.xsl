@@ -17,7 +17,7 @@
           &#8212;
           <xsl:value-of select="$site-name" />
         </title>
-        <link rel="stylesheeet" href="{$xrcs-url}/css/general.css" />
+        <link rel="stylesheet" href="{$xrcs-url}/css/general.css" />
       </head>
       <body>
         <a href="#content">skip to main content</a>
