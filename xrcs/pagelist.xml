@@ -1,0 +1,13 @@
+<pagelist xmlns="xrcs:pagelist">
+  <index>
+    <directory href="/XRCS/">
+      <page id="/" href="" />
+      <directory href="documentation/">
+        <page id="/docs/pagelist" href="pagelist.xml" />
+      </directory>
+    </directory>
+  </index>
+  <list>
+    
+  </list>
+</pagelist>

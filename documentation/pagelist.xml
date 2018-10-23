@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/XRCS/xrcs/template.xsl" type="text/xsl"?>
+<xrcs:page id="/docs/pagelist"
+           xmlns="http://www.w3.org/1999/xhtml"
+           xmlns:xrcs="xrcs:xrcs">
+  <xrcs:title>Pagelist</xrcs:title>
+  <xrcs:content>
+    <p>
+      The pagelist is a core feature of XRCS. It provides an index
+      for links and includes, and defines the structure of the
+      sidebar.
+    </p>
+    <p>
+      I'm basically going to be using this page to show off some of
+      the nifty features that pagelist enables; you won't be able to
+      see many of them on this page but you can always view-source.
+    </p>
+  </xrcs:content>
+  <xrcs:page id="xml">
+    <xrcs:title>pagelist.xml</xrcs:title>
+    <xrcs:content>
+      <aside>
+        This page is referenced as <code>pagelist#xml</code>,
+        not <code>xml</code>.
+      </aside>
+      <p>
+        <code>pagelist.xml</code> has two main sections:
+        <code>&lt;index&gt;</code> and <code>&lt;list&gt;</code>.
+      </p>
+      <section id="xml/index">
+        <xrcs:heading><code>&lt;index&gt;</code></xrcs:heading>
+        <p>
+          This section is a sort of structured sitemap. The next
+          element should be a <code>&lt;directory&gt;</code> if you
+          want to use use relative <code>href</code>s (I strongly
+          recommend that you do!) Since XRCS uses multiple
+          directories, it's Undefined Behaviour to use a
+          directory-relative URI outside an absolute
+          <code>&lt;directory&gt;</code>. If your site spans multiple
+          domains, ditto for a domain-relative URI. (If your site
+          spans multiple protocols, you're completely bonkers; let me
+          know how it turns out!)
+        </p>
+        <p>
+          <code>&lt;directory&gt;</code> is merely a convenience;
+          if you're manually constructing a <code>pagelist.xml</code>
+          (like I have), you'll want to use it. If you're
+          constructing the <code>&lt;index&gt;</code> automatically
+          (e.g. served from a CGI script) you'll probably want to
+          avoid it.
+        </p>
+        <p>
+          It could be said that <code>&lt;index&gt;</code> represents
+          the URL structure of the site, whereas
+          <code>&lt;list&gt;</code> represents the logical structure.
+        </p>
+      </section>
+      <section id="xml/list">
+        <xrcs:heading><code>&lt;list&gt;</code></xrcs:heading>
+        <p>
+          To be written once it's planned out!
+        </p>
+      </section>
+    </xrcs:content>
+  </xrcs:page>
+</xrcs:page>
