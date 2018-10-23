@@ -1,0 +1,24 @@
+/* I'm feeling benevolent;
+   let's teach Internet Explorer how to render this website. */
+article, aside, details, figcaption, figure, footer, header,
+hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* Accessibility */
+  /* Hide the skip to main content link unless it has focus */
+body > a:first-child {
+  background: inherit;
+  position: fixed;
+  left: 0px;
+  top: -1.2em;
+  top: -1lh;
+  transition: top 2s ease-out, color 2s ease-out;
+}
+body > a:first-child:not(:focus) {
+  color: transparent;
+}
+body > a:first-child:focus {
+  top: 0px;
+  transition: top 0.1s ease-in, color 0.1s linear;
+}
