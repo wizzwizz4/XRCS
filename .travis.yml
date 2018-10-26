@@ -1,0 +1,14 @@
+sudo: required
+
+# https://stackoverflow.com/a/44738181/5223757
+language: generic
+
+before_install:
+  - sudo apt-get install -y xsltproc
+
+addons:
+  apt:
+    update: true
+
+script:
+  - xsltproc xrcs/template.xsl index.xml
