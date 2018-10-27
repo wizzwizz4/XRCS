@@ -3,4 +3,5 @@
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
                 xmlns:xrcs="xrcs:xrcs"
                 xmlns="http://www.w3.org/1999/xhtml">
+  <xsl:import href="pagelist.xsl" />
 </xsl:stylesheet>
